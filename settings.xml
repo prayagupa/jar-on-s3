@@ -1,0 +1,20 @@
+<settings>
+   <servers>
+    <server>
+       <id>aws-site</id>
+       <username>AKIAIOTKWJOJZN123456</username>
+       <password>g6xrKt+J3vL0K7+oe9DOdS/YgZ5XxTAv12345678</password>
+     </server>
+
+    <server>
+    <id>aws-release</id>
+      <username>AKIAIOTKWJOJZN123456</username>
+      <password>g6xrKt+J3vL0K7+oe9DOdS/YgZ5XxTAv12345678</password>
+    </server>
+    <server>
+      <id>aws-snapshot</id>
+      <username>AKIAIOTKWJOJZN123456</username>
+      <password>g6xrKt+J3vL0K7+oe9DOdS/YgZ5XxTAv12345678</password>
+    </server>
+  </servers>
+</settings>
