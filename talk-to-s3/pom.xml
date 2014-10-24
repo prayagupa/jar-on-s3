@@ -66,5 +66,16 @@
       <artifactId>uploadme</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+          <dependency>                                                                                   
+              <groupId>org.apache.usergrid</groupId>                                                                                                  
+              <artifactId>usergrid-core</artifactId>                                                     
+              <version>1.0.0</version>                                                     
+              <exclusions>                                                                               
+                  <exclusion>                                                                            
+                      <groupId>org.apache.lucene</groupId>                                               
+                      <artifactId>lucene-core</artifactId>                                               
+                  </exclusion>                                                                           
+              </exclusions>                                                                              
+          </dependency>     
   </dependencies>
 </project>
