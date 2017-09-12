@@ -3,40 +3,11 @@ AWS S3 as Maven Repository
 
 This project demonstrates how to use AWS S3 as maven repository. [AWS Maven Wagon](https://github.com/spring-projects/aws-maven) plugin is used.
 
-Demo Projects
-=============
+create a simple-storage bucket
+------------------------
 
-## uploadme
-This project is a sample maven project. It's configured to be published to s3 based repository.
-
-It is used to demonstrate maven artifacts publish to S3 based repository.
-
-
-## talk-to-s3
-This project depends on **uploadme** project.
-
-It is used to demonstrate resolving dependencies using S3 based repository with an `s3://` schema.
-
-Configuration
-=============
-
-## Local AWS Account Settings
-S3 access keys should be configured under `~/.m2/settings.xml`.
-
-    <settings>
-       <servers>
-        <server>
-          <id>aws-release</id>
-          <username>AKIAIC5IC111111111</username>
-          <password>ACF1111111111111111111111111111111</password>
-        </server>
-        <server>
-          <id>aws-snapshot</id>
-          <username>AKIAIC5IC111111111</username>
-          <password>ACF1111111111111111111111111111111</password>
-        </server>
-      </servers>
-    </settings>
+```
+```
 
 ## AWS Account Permissions
 Proper AWS account permissions need to be granted to allow the account to write and read objects from S3.
@@ -80,3 +51,40 @@ You need to configure bucket policy so that those artifacts could be accessable.
         }
       ]
     }
+
+Demo Projects
+=============
+
+## publish-artifact
+This project is a sample maven project. It's configured to be published to s3 based repository.
+
+It is used to demonstrate maven artifacts publish to S3 based repository.
+
+
+## talk-to-s3
+This project depends on **uploadme** project.
+
+It is used to demonstrate resolving dependencies using S3 based repository with an `s3://` schema.
+
+Configuration
+=============
+
+## Local AWS Account Settings
+S3 access keys should be configured under `~/.m2/settings.xml`.
+
+    <settings>
+       <servers>
+        <server>
+          <id>aws-release</id>
+          <username>AKIAIC5IC111111111</username>
+          <password>ACF1111111111111111111111111111111</password>
+        </server>
+        <server>
+          <id>aws-snapshot</id>
+          <username>AKIAIC5IC111111111</username>
+          <password>ACF1111111111111111111111111111111</password>
+        </server>
+      </servers>
+    </settings>
+
+
